@@ -1,0 +1,197 @@
+/* -------------------- */
+/*       About Us       */
+/* -------------------- */
+
+/* Mobile - 0px */
+@media only screen and (min-width: 0rem) {
+  #about-us {
+    padding-top: 125px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f7f7f7;
+    position: relative;
+    z-index: 1;
+  }
+
+  #about-us .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #about-us .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 28.125rem;
+    margin-right: auto;
+  }
+
+  #about-us .about-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--secondary);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  #about-us .about-subtitle {
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    color: var(--primary);
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    line-height: 1.2em;
+    text-align: inherit;
+    transition: color 0.3s;
+  }
+
+
+  #about-us .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--bodyTextColor);
+    margin-bottom: 1.25rem;
+  }
+
+  #about-us .about-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin: 2rem 0 1.5rem 0;
+    padding-left: 1.25rem;
+    border-left: 4px solid var(--primary);
+  }
+
+  #about-us .about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  #about-us .about-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: var(--bodyTextColor);
+  }
+
+  #about-us .about-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+
+  #about-us .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-us .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #about-us .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+
+  #about-us .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    /* 16px - 32px */
+    padding: clamp(1rem, 4.5vw, 2rem);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    grid-row: span 1;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+
+  #about-us .cs-item:hover {
+    border-color: var(--primary);
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #about-us .about-quote {
+      padding-left: 1.5rem;
+    }
+
+    #about-us .about-list {
+      margin-left: 0;
+    }
+    
+    #about-us .cs-item {
+      grid-column: span 12;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+    #about-us {
+      padding-top: 125px;
+      padding-bottom: 50px;
+      padding-left: 225px;
+      padding-right: 225px;
+      background-color: #f7f7f7;
+      position: relative;
+      z-index: 1;
+    }
+
+    #about-us .cs-container {
+      max-width: 70rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    #about-us .cs-item {
+      grid-column: span 6;
+    }
+  }
+}
